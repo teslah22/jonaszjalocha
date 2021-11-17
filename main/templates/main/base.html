@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi, I'm Jonasz</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,500;1,700&family=Rancho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="..\..\static\modern-normmalize.css">
+    <link rel="stylesheet" type="text/css" href="..\..\static\main.css">
+    <script src="https://kit.fontawesome.com/58866e6d19.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+        <header id="header">
+
+            <ul>
+                <li><a href="#" class="logo"><i class="fas fa-home"></i></a></li>
+                <li><a href="#" >About me</a></li>
+                <li><a href="#" class="active">Resume</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </header>
+    
+        <section>
+            <h1 id="motto"><span>I'm Jonasz. Let's design</span><br>together</h1>
+            <img src="..\..\static\assets\background-right.jpg" id="background">
+    
+        </section>
+    
+        <div class="sec">
+    
+            <h3>Nice to meet you!</h3>
+
+            <p>I'm the the Overhead Powerlines Design Engineer. <br>I'm crazy about IT and new technologies. <br>Welcome on personal website.</p>
+            <div>
+                {% block blog %}
+                {% endblock %}
+            </div>
+            <div>
+                {% block resume %}
+                {% endblock %}
+            </div>
+        </div>
+
+
+</body>
+</html>

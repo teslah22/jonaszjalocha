@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+
+{% block blog %}
+
+<h2>Welcome on my blog!</h2> 
+    {% for post in posts %}
+    
+    <h1> {{ post.postTitle }} </h1>
+    <h3> {{ post.postHeader }} </h3>
+
+    <div> by {{ post.postAuthor }}</span>
+    <div> {{ post.postDate }}</span>
+
+    <div>{{ post.postSection }}</div>
+    {% endfor %}
+
+{% endblock %}

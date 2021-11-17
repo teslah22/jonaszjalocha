@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    background: #fff;
+    min-height: 100vh;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+#header a.logo{
+    padding: 6px 15px;
+    color :#c2b280;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+#header a.logo:hover
+{
+    color: #fff; 
+    text-shadow: 0 0 10px #c2b280,
+    0 0 20px #c2b280,
+    0 0 40px #c2b280,
+    0 0 80px #c2b280,
+    0 0 160px #c2b280;
+}
+
+#header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header ul li{
+    list-style: none;
+    margin-left: 20px;
+    z-index: 10;
+}
+
+#header ul li a{
+    padding: 6px 15px;
+    color :#c2b280;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 1.5em;
+}
+
+#header ul li a:hover,
+#header ul li a.active
+{
+
+    color: #fff;
+    text-shadow: 0 0 10px #c2b280,
+    0 0 20px #c2b280,
+    0 0 40px #c2b280,
+    0 0 80px #c2b280,
+    0 0 160px #c2b280,
+    0 0 320px #c2b280;
+}
+
+
+section {
+    position: relative;
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section #motto {
+    position: absolute;
+    color: #c2b280;
+    font-size: 10vw;
+    text-align: center;
+    line-height: 0.55em;
+    font-family: 'Rancho', cursive;
+    transform: translate(-68%,-60%);
+    z-index: 10;
+    line-height: 0.6em;
+    animation: animate 5s linear infinite;
+    outline: none;
+}
+
+@keyframes animate
+{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+        color:#c2b280;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color: #fff;
+        text-shadow: 0 0 10px #c2b280,
+        0 0 20px #c2b280,
+        0 0 40px #c2b280,
+        0 0 80px #c2b280,
+        0 0 160px #c2b280;
+    }
+}
+
+section #motto span{
+    font-size: 0.20em;
+    color: #c2b280;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:  cover;
+    pointer-events: none;
+}
+
+.sec {
+    /* background-image: url("../static/assets/background-window.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    background: #000;
+    position: relative;
+    padding: 100px;
+    min-height: 100vh;
+    font-size: 3.5em;
+    color: #c2b280;
+}
+
+.sec h3 {
+                color: #fff;
+                text-shadow: 0 0 10px #c2b280,
+                0 0 20px #c2b280,
+                0 0 40px #c2b280,
+                0 0 80px #c2b280,
+                0 0 160px #c2b280,
+                0 0 320px #c2b280;
+        }

@@ -1,0 +1,30 @@
+{% extends 'main/base.html' %}
+
+{% block resume %}
+    <h2>tu bedzie resume</h2>
+        {% for resumeItem in resumeItems %}
+
+            <h3> {{ resumeItem.JobPositionName }} </h3>
+            <h4> {{ resumeItem.JobCompanyName }} </h4>
+
+            <h5> from {{ resumeItem.JobStart }} to {{ resumeItem.JobEnd }} </h5>
+
+            <h4> {{ resumeItem.JobDescription }} </h4>
+
+            <ul>
+                <li>{{ resumeItem.JobDetail0 }}</li>
+                <li>{{ resumeItem.JobDetail1 }}</li>
+                <li>{{ resumeItem.JobDetail2 }}</li>
+                <li>{{ resumeItem.JobDetail3 }}</li>
+                <li>{{ resumeItem.JobDetail4 }}</li>
+                <li>{{ resumeItem.JobDetail5 }}</li>
+                <li>{{ resumeItem.JobDetail6 }}</li>
+                <li>{{ resumeItem.JobDetail7 }}</li>
+                <li>{{ resumeItem.JobDetail8 }}</li>
+            </ul> 
+
+
+        {% endfor %}
+
+
+{% endblock %}
