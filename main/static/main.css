@@ -11,16 +11,36 @@ body{
     min-height: 100vh;
 }
 
-header{
-    position: absolute;
+#header{
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 10px 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 10;
+    background: #c2b2803b;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    background: #c2b2803b;
+}
+
+#footer p{
+    color :#c2b280;
+    text-shadow: 0 0 10px black;
+    font-size: 1em;;
 }
 
 #header a.logo{
@@ -54,13 +74,16 @@ header{
     z-index: 10;
 }
 
-#header ul li a{
+#header ul li a
+{
     padding: 6px 15px;
     color :#c2b280;
     text-decoration: none;
     border-radius: 20px;
     font-size: 1.5em;
 }
+
+
 
 #header ul li a:hover,
 #header ul li a.active
@@ -136,17 +159,28 @@ section img {
     pointer-events: none;
 }
 
+/* section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width:100%;
+    height:20px;
+    background: linear-gradient(to top,white,transparent);
+    z-index: 100;
+} */
+
 .sec {
     /* background-image: url("../static/assets/background-window.JPG");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; */
-    background: #000;
+    background: black;
     position: relative;
-    padding: 100px;
+    padding: 130px 200px;
     min-height: 100vh;
     font-size: 3.5em;
-    color: #c2b280;
+    color: #f7f2e5;
 }
 
 .sec h3 {

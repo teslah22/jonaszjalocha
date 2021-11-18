@@ -35,20 +35,25 @@
     
         </section>
     
-        <div class="sec">
+            <div class="sec">
     
-            <h3>Nice to meet you!</h3>
+                <h3>Nice to meet you!</h3>
+    
+                <p>I'm the the Overhead Powerlines Design Engineer. <br>I'm crazy about IT and new technologies. <br>Welcome on personal website.</p>
+                <div>
+                    {% block blog %}
+                    {% endblock %}
+                </div>
+                <div>
+                    {% block resume %}
+                    {% endblock %}
+                </div>
+            </div>
 
-            <p>I'm the the Overhead Powerlines Design Engineer. <br>I'm crazy about IT and new technologies. <br>Welcome on personal website.</p>
-            <div>
-                {% block blog %}
-                {% endblock %}
-            </div>
-            <div>
-                {% block resume %}
-                {% endblock %}
-            </div>
-        </div>
+    <footer id="footer">
+        <p>© Jonasz Jałocha 2021</p>
+    </footer>
+
 
 </body>
 </html>
