@@ -7,7 +7,9 @@ from .models import ResumeItem, PostItem
 # Create your views here.
 
 def index(response):
-    return render(response, "main/base.html", {})
+    resumeItems = ResumeItem.objects.all().order_by('-JobStart')
+    posts = PostItem.objects.all()
+    return render(response, "main/base.html", {"resumeItems": resumeItems,"posts": posts})
 
 def resume(response):
     resumeItems = ResumeItem.objects.all().order_by('-JobStart')

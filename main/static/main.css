@@ -47,7 +47,7 @@ body{
     padding: 6px 15px;
     color :#c2b280;
     font-weight: 700;
-    font-size: 2em;
+    font-size: 1em;
     text-decoration: none;
     border-radius: 20px;
 }
@@ -80,7 +80,7 @@ body{
     color :#c2b280;
     text-decoration: none;
     border-radius: 20px;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 
@@ -99,7 +99,7 @@ body{
 }
 
 
-section {
+.cover {
     position: relative;
     width: 100%;
     min-height:100vh;
@@ -108,7 +108,7 @@ section {
     align-items: center;
 }
 
-section #motto {
+.cover #motto {
     position: absolute;
     color: #c2b280;
     font-size: 10vw;
@@ -140,7 +140,7 @@ section #motto {
     }
 }
 
-section #motto span{
+.cover #motto span{
     font-size: 0.20em;
     color: #c2b280;
     letter-spacing: 2px;
@@ -149,7 +149,7 @@ section #motto span{
 
 }
 
-section img {
+.cover img {
     position: absolute;
     top: 0;
     left: 0;
@@ -159,36 +159,64 @@ section img {
     pointer-events: none;
 }
 
-/* section::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left:0;
-    width:100%;
-    height:20px;
-    background: linear-gradient(to top,white,transparent);
-    z-index: 100;
-} */
-
-.sec {
-    /* background-image: url("../static/assets/background-window.JPG");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
+section {
     background: black;
     position: relative;
-    padding: 130px 200px;
-    min-height: 100vh;
+    padding: 5% 10%;
+    height: 100vh;
     font-size: 3.5em;
     color: #f7f2e5;
 }
 
-.sec h3 {
+section h5 {
                 color: #fff;
-                text-shadow: 0 0 10px #c2b280,
-                0 0 20px #c2b280,
-                0 0 40px #c2b280,
-                0 0 80px #c2b280,
-                0 0 160px #c2b280,
-                0 0 320px #c2b280;
+                text-shadow: 0 0 10px #c2b280;
+                padding: 0 0 15px 0;
         }
+
+section p {
+    font-size: 0.5em;
+    margin-bottom: 5%;
+}
+
+
+section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+}
+
+section .container .box-left,
+section .container .box-right {
+
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+    border-radius: 20px;
+    background-color:#c2b280;
+}
+
+section .container .box-left {
+    background-color: none;
+    box-shadow: none;
+}
+
+section .container .box-left img {
+    position: absolute;
+    top: 50;
+    left: 50;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    pointer-events: none;
+    border-radius: 20px;
+}
+

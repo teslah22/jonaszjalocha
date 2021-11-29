@@ -12,12 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,500;1,700&family=Rancho&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="..\..\static\modern-normmalize.css">
     <link rel="stylesheet" type="text/css" href="..\..\static\main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/58866e6d19.js" crossorigin="anonymous"></script>
+    
     
 </head>
 <body>
 
-        <header id="header">
+        <header id="header" data-aos="fade-down" data-aos-delay="300">
 
             <ul>
                 <li><a href="#" class="logo"><i class="fas fa-home"></i></a></li>
@@ -29,31 +31,67 @@
 
         </header>
     
-        <section>
-            <h1 id="motto"><span>I'm Jonasz. Let's design</span><br>together</h1>
+        <div class="cover">
+            <h1 id="motto" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="2000" data-aos-easing="ease-in-out"
+            data-aos-mirror="true"><span>I'm Jonasz. Let's design</span><br>together</h1>
             <img src="..\..\static\assets\background-right.jpg" id="background">
     
-        </section>
+        </div>
     
-            <div class="sec">
+            <section id="introduction">
     
-                <h3>Nice to meet you!</h3>
+                <h5>It's good you dropped by!</h5>
+    
+                <p>I'm Jonasz, the electrical engineer by education,  programmer by passion.<br>Make yourself comfortable on my personal website.</p>
+
+                <div class="container">
+                    <div class="box-left" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
+                            <img src="..\..\static\assets\portrait-quad.jpg" id="portrait">
+                        
+                    </div>
+                    <div class="box-right" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+                            <p> Please take a quick look at my <a href="#" class="active">resume</a>.</p>
+                            <p> I listed out the most intresting <a href="#" class="active">projects</a>.</p> 
+                            <p> Don't forget to check also my <a href="#" class="active">programming skills</a>.</p> 
+                            <p> Check out my personal <a href="#">Blog</a>.</p> 
+                            <p>In any case we can catch up through <a href="#">contact</a> tab.</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- <section id="blog">
+    
+                <h5>Please check my blog</h5>
     
                 <p>I'm the the Overhead Powerlines Design Engineer. <br>I'm crazy about IT and new technologies. <br>Welcome on personal website.</p>
                 <div>
                     {% block blog %}
                     {% endblock %}
                 </div>
+
+            </section>
+
+            <section id="resume">
+    
+                <h5>A bit of my professional experiance</h5>
+    
+                <p>I'm the the Overhead Powerlines Design Engineer. <br>I'm crazy about IT and new technologies. <br>Welcome on personal website.</p>
                 <div>
                     {% block resume %}
                     {% endblock %}
                 </div>
-            </div>
+            </section> -->
 
     <footer id="footer">
-        <p>© Jonasz Jałocha 2021</p>
+        <p>© -Jonasz Jałocha 2021- All rights reserved </p>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 
 </body>
 </html>
