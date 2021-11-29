@@ -40,21 +40,22 @@
     
             <section id="introduction">
     
-                <h5>It's good you dropped by!</h5>
-    
-                <p>I'm Jonasz, the electrical engineer by education,  programmer by passion.<br>Make yourself comfortable on my personal website.</p>
+                <h5 data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">It's good you dropped by!</h5>
+                <p data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">I'm Jonasz, electrical engineer by education,  programmer by passion.<br>Make yourself comfortable on my personal website.</p>
 
                 <div class="container">
-                    <div class="box-left" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="box-left" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000" >
                             <img src="..\..\static\assets\portrait-quad.jpg" id="portrait">
-                        
+                            <!-- data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.4" -->
                     </div>
-                    <div class="box-right" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
-                            <p> Please take a quick look at my <a href="#" class="active">resume</a>.</p>
-                            <p> I listed out the most intresting <a href="#" class="active">projects</a>.</p> 
-                            <p> Don't forget to check also my <a href="#" class="active">programming skills</a>.</p> 
-                            <p> Check out my personal <a href="#">Blog</a>.</p> 
-                            <p>In any case we can catch up through <a href="#">contact</a> tab.</p>
+                    <div class="box-right" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000" >
+                            <ul>
+                                <li>Please take a quick look at my<a href="#">resume.</a></li>
+                                <li>I listed out for you the most intresting<a href="#">projects</a>I took part in<br>
+                                and the<a href="#">clients</a>I have worked with.</li>
+                                <li>In any case we can catch up through<a href="#">contact</a>tab.</li>
+                            </ul> 
+                            
                     </div>
 
                 </div>
@@ -93,5 +94,6 @@
         AOS.init();
       </script>
 
+    <script type="text/javascript" src="..\..\static\assets\vanilla-tilt.js"></script>
 </body>
 </html>
