@@ -56,13 +56,44 @@
                                 <li>I listed out for you the most intresting<a href="#">projects</a>I took part in<br>
                                 and the<a href="#">clients</a>I have worked with.</li>
                                 <li>In any case we can catch up through<a href="#">contact</a>tab.</li>
-                            </ul> 
-                            
+                            </ul>
                     </div>
 
                 </div>
 
             </section>
+
+            <section id="resume">
+                <h5>A little bit of my professional experiance</h5>
+                <div class="container">
+                    {% for resumeItem in resumeItems %}
+                    <div class="box-right">
+
+                        <h6> {{ resumeItem.JobPositionName }} </h6>
+                        <h6> {{ resumeItem.JobCompanyName }} </h6>
+                
+                        <p> from {{ resumeItem.JobStart }} to {{ resumeItem.JobEnd }} </p>
+                
+                        <p> {{ resumeItem.JobDescription }} </p>
+                
+                        <ul>
+                            <li>{{ resumeItem.JobDetail0 }}</li>
+                            <li>{{ resumeItem.JobDetail1 }}</li>
+                            <li>{{ resumeItem.JobDetail2 }}</li>
+                            <li>{{ resumeItem.JobDetail3 }}</li>
+                            <li>{{ resumeItem.JobDetail4 }}</li>
+                            <li>{{ resumeItem.JobDetail5 }}</li>
+                            <li>{{ resumeItem.JobDetail6 }}</li>
+                            <li>{{ resumeItem.JobDetail7 }}</li>
+                            <li>{{ resumeItem.JobDetail8 }}</li>
+                        </ul> 
+                        
+                    </div>
+                    {% endfor %}
+
+            </section>
+
+
 
             <!-- <section id="blog">
     

@@ -9,7 +9,7 @@ from .models import ResumeItem, PostItem
 def index(response):
     resumeItems = ResumeItem.objects.all().order_by('-JobStart')
     posts = PostItem.objects.all()
-    return render(response, "main/base.html", {"resumeItems": resumeItems,"posts": posts})
+    return render(response, "main/base.html", {"resumeItems": resumeItems})
 
 def resume(response):
     resumeItems = ResumeItem.objects.all().order_by('-JobStart')

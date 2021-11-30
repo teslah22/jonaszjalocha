@@ -10,7 +10,7 @@
 }
 
 body{
-    overflow-x: hidden;
+    /* overflow: hidden; */
     background: #fff;
     min-height: 100vh;
 }
@@ -228,6 +228,7 @@ section .container .box-right {
     box-shadow: 0 0 10px #c2b280,
     0 0 20px #c2b280;
     background-color: none;
+    /* overflow: hidden; */
 }
 
 /* section .container .box-left,
