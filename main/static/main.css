@@ -213,7 +213,8 @@ section .container {
 }
 
 section .container .box-left,
-section .container .box-right {
+section .container .box-right,
+section .container .owl-carousel .box-job {
 
     width: 50%;
     height: 100%;
@@ -228,8 +229,16 @@ section .container .box-right {
     box-shadow: 0 0 10px #c2b280,
     0 0 20px #c2b280;
     background-color: none;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
+
+section .container .owl-carousel .box-job p {
+
+    width: 50px;
+
+}
+
+
 
 /* section .container .box-left,
 section .container .box-right {
@@ -281,6 +290,7 @@ section .container .box-left img {
 }
 
 section .container .box-right:hover,
-section .container .box-left:hover {
+section .container .box-left:hover,
+section .container .box-job:hover {
     transform: scale(1.05);
 }

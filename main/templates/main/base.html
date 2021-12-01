@@ -14,6 +14,8 @@
     <link rel="stylesheet" type="text/css" href="..\..\static\main.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/58866e6d19.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="..\..\static\owl.carousel.min.css">
+    <link rel="stylesheet" href="..\..\static\owl.theme.default.min.css">    
     
     
 </head>
@@ -66,30 +68,11 @@
             <section id="resume">
                 <h5>A little bit of my professional experiance</h5>
                 <div class="container">
-                    {% for resumeItem in resumeItems %}
-                    <div class="box-right">
-
-                        <h6> {{ resumeItem.JobPositionName }} </h6>
-                        <h6> {{ resumeItem.JobCompanyName }} </h6>
-                
-                        <p> from {{ resumeItem.JobStart }} to {{ resumeItem.JobEnd }} </p>
-                
-                        <p> {{ resumeItem.JobDescription }} </p>
-                
-                        <ul>
-                            <li>{{ resumeItem.JobDetail0 }}</li>
-                            <li>{{ resumeItem.JobDetail1 }}</li>
-                            <li>{{ resumeItem.JobDetail2 }}</li>
-                            <li>{{ resumeItem.JobDetail3 }}</li>
-                            <li>{{ resumeItem.JobDetail4 }}</li>
-                            <li>{{ resumeItem.JobDetail5 }}</li>
-                            <li>{{ resumeItem.JobDetail6 }}</li>
-                            <li>{{ resumeItem.JobDetail7 }}</li>
-                            <li>{{ resumeItem.JobDetail8 }}</li>
-                        </ul> 
-                        
+                    <div class="owl-carousel">
+                        <div class="box-job"><p>cos tam 1</p></div>
+                        <div class="box-job"><p>cos tam 2</p></div>
+                        <div class="box-job"><p>cos tam 3</p></div>
                     </div>
-                    {% endfor %}
 
             </section>
 
@@ -128,5 +111,8 @@
       </script>
 
     <script type="text/javascript" src="..\..\static\assets\vanilla-tilt.js"></script>
+    <script src="..\..\static\assets\js\jquery.js"></script>
+    <script src="..\..\static\assets\js\owl.carousel.min.js"></script>
+    <script src="..\..\static\assets\js\app.js"></script>
 </body>
 </html>
