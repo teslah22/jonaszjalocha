@@ -196,6 +196,7 @@ section h5 {
                 /* color: black; */
                 text-shadow: 0 0 10px #c2b280;
                 padding: 0 0 15px 0;
+                font-size: 1em;
         }
 
 section p {
@@ -206,10 +207,11 @@ section p {
 
 section .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    height: 70%;
+    height: 60vh;
+    overflow: hidden;
 }
 
 section .container .box-left,
@@ -217,7 +219,7 @@ section .container .box-right,
 section .container .owl-carousel .box-job {
 
     width: 50%;
-    height: 100%;
+    height: 90%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -232,9 +234,13 @@ section .container .owl-carousel .box-job {
     overflow: hidden;
 }
 
-section .container .owl-carousel .box-job p {
+#resume .container {
+    height: 70vh;
+}
 
-    width: 50px;
+section .container .owl-carousel .box-job {
+    width: 80%;
+    height: 70%;
 
 }
 
@@ -293,4 +299,10 @@ section .container .box-right:hover,
 section .container .box-left:hover,
 section .container .box-job:hover {
     transform: scale(1.05);
+}
+
+section .container .owl-carousel .box-job img {
+    width: 200px;
+    height: 150px;
+    object-fit: scale-down;
 }
