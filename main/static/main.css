@@ -6,6 +6,7 @@
     list-style: none;
     text-decoration: none;
     transition: 0.5;
+    scroll-behavior: smooth;
 
 }
 
@@ -214,6 +215,16 @@ section .container {
     overflow: hidden;
 }
 
+#resume .container {
+    height: 70vh;
+}
+
+section .container .owl-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 section .container .box-left,
 section .container .box-right,
 section .container .owl-carousel .box-job {
@@ -234,14 +245,15 @@ section .container .owl-carousel .box-job {
     overflow: hidden;
 }
 
-#resume .container {
-    height: 70vh;
-}
+
+
 
 section .container .owl-carousel .box-job {
     width: 80%;
     height: 70%;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -305,4 +317,11 @@ section .container .owl-carousel .box-job img {
     width: 200px;
     height: 150px;
     object-fit: scale-down;
+}
+
+section .container .owl-carousel .box-job ul {
+    list-style: square;
+}
+section .container .owl-carousel .box-job ul li {
+    font-size: 0.35em;
 }

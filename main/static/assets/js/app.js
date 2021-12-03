@@ -3,8 +3,8 @@ $(document).ready(function(){
 
     loop: true,
     margin: 0,
-    nav: true,
-    items: 1.5,
+    nav: false,
+    items: 1.7,
     autoplay: true,
     autoplayTimeout: 4000,
     autoplayHoverPause: true,
