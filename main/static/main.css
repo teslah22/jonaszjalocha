@@ -92,7 +92,8 @@ section .container .box-right ul li {
 
 
 #header ul li a,
-section .container .box-right ul li a
+section .container .box-right ul li a,
+section .container .owl-carousel .box-job ul li a
 {
     padding: 6px 15px;
     color :#c2b280;
@@ -108,7 +109,8 @@ section .container .box-right ul li a{
 
 #header ul li a:hover,
 section .container .box-right a:hover,
-#header ul li a.active
+#header ul li a.active,
+section .container .owl-carousel .box-job ul li a:hover
 {
 
     color: #fff;
@@ -183,10 +185,8 @@ section .container .box-right a:hover,
 
 section {
     background: black;
-    /* background: whitesmoke; */
-    /* background-image: url(../static/assets/background-wood.jpg); */
     position: relative;
-    padding: 5% 10%;
+    padding: 4% 10%;
     height: 100vh;
     font-size: 3.5em;
     color: #f7f2e5;
@@ -194,15 +194,14 @@ section {
 
 section h5 {
                 color: #fff;
-                /* color: black; */
                 text-shadow: 0 0 10px #c2b280;
                 padding: 0 0 15px 0;
-                font-size: 1em;
+                font-size: 0.7em;
         }
 
 section p {
     font-size: 0.5em;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 
 
@@ -245,56 +244,14 @@ section .container .owl-carousel .box-job {
     overflow: hidden;
 }
 
-
-
-
-section .container .owl-carousel .box-job {
-    width: 80%;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-/* section .container .box-left,
-section .container .box-right {
-
-    width: 50%;
-    height: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 3%;
-    border-radius: 20px;
-    border: 1px solid #c2b280;
-    box-shadow: 0 0 10px #c2b280,
-    0 0 20px #c2b280;
-    background-color: none;
-} */
-
 section .container .box-right:hover,
-section .container .box-left:hover{
+section .container .box-left:hover,
+section .container .box-job:hover{
     box-shadow: 0 0 10px #c2b280,
     0 0 20px #c2b280,
     0 0 40px #c2b280;
 
 }
-
-
-/* section .container .box-right:hover,
-section .container .box-left:hover{
-    box-shadow: 0 0 10px black,
-    0 0 20px black,
-    0 0 40px black;
-    border: 1px solid black;
-    backdrop-filter: blur(6px);
-
-} */
-
 
 section .container .box-left img {
     position: absolute;
@@ -308,20 +265,63 @@ section .container .box-left img {
 }
 
 section .container .box-right:hover,
-section .container .box-left:hover,
-section .container .box-job:hover {
+section .container .box-left:hover {
     transform: scale(1.05);
 }
 
-section .container .owl-carousel .box-job img {
-    width: 200px;
-    height: 150px;
+section .container .owl-stage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+
+section .container .owl-carousel .box-job {
+    width: 80%;
+    height: 70%;
+    padding: 2%;
+
+}
+
+section .container .owl-carousel .box-job #job-tenure{
+    font-size: 0.5em;
+    font-family: 'Rancho', cursive;
+}
+
+section .container .owl-carousel .box-job #job-title{
+    font-size: 0.6em;
+    text-align: center;
+    padding: 2% 0;
+}
+
+section .container .owl-carousel .box-job .company-container{
+    display: flex;
+    column-gap: 10%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+section .container .owl-carousel .box-job .company-container #job-company{
+    font-size: 0.4em;
+    white-space: nowrap;
+
+}
+
+section .container .owl-carousel .box-job .company-container img {
+    width: 1.5em;
+    height: 1em;
     object-fit: scale-down;
+    border-radius: 20%;
 }
 
 section .container .owl-carousel .box-job ul {
-    list-style: square;
+    list-style-image: url(../static/assets/tower-transparent-png.png);
 }
+
 section .container .owl-carousel .box-job ul li {
     font-size: 0.35em;
+    margin-bottom: 2%;
 }
+
+
+
