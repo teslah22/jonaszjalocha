@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models.fields.files import ImageField
 
 
 class PostItem(models.Model):
@@ -34,4 +35,10 @@ class ResumeItem(models.Model):
         return self.JobPositionName+'-'+self.JobCompanyName
 
 
+class Clients(models.Model):
+    ClientName = models.CharField(max_length=200)
+    ClientDescription = models.CharField(max_length=200)
+    ClientLogo = models.ImageField (blank=True)
 
+    def __str__(self):
+        return self.ClientName

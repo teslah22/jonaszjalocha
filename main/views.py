@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.utils.regex_helper import normalize
-from .models import ResumeItem, PostItem
+from .models import Clients, ResumeItem, PostItem
 
 
 # Create your views here.
@@ -9,7 +9,8 @@ from .models import ResumeItem, PostItem
 def index(response):
     resumeItems = ResumeItem.objects.all().order_by('-JobStart')
     posts = PostItem.objects.all()
-    return render(response, "main/base.html", {"resumeItems": resumeItems})
+    clients = Clients.objects.all()
+    return render(response, "main/base.html", {"resumeItems": resumeItems, "clients": clients})
 
 def resume(response):
     resumeItems = ResumeItem.objects.all().order_by('-JobStart')

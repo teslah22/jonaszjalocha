@@ -92,7 +92,7 @@
 
                             <ul>
                                 <li>Getting the Professional License of electrical designing (the most challanging exam ever!) and being promoted to the Designer Position.</li>
-                                <li>Starting working on international projects in UK<a href="#">(400 kV Cartenbury-Richborough line)</a>and Angola<a href="#">(400kV Lauca-Bita/220kV Lauca Ecologica).</a></li>
+                                <li>Starting working on international projects in UK<a href="#">(400 kV Cartenbury-Richborough OHL)</a>and Angola<a href="#">(400kV Lauca-Bita/220kV Lauca Ecologica OHL).</a></li>
                                 <li>Managing small design team, putting together different branches such as civil, construction, surveyor and subcontractors.</li> 
                                 <li>Site visiting, coopering directly with the clients across the globe.</li>
                                 <li>Focusing on design optimalization, writing simple, but useful VBA scripts, working on XML and KML related R&D project.</li>
@@ -102,7 +102,7 @@
                         </div>
                         <div class="box-job">
                             <small id="job-tenure">2020-now</small>
-                            <h6 id="job-title">Overhead Powerlines Design Assistant</h6>
+                            <h6 id="job-title">Overhead Powerlines Designer</h6>
                             <div class="company-container">
                                 <img src="../../static/assets/enprom.png">
                                 <h6 id="job-company">Enprom Sp. z o.o.</h6>
@@ -123,7 +123,18 @@
 
             </section>
 
+            <section id="clients">
+                <h5>The Clients I had pleasure to work with</h5>
+                <div class="container">
+                    {% for client in clients %}
+                        <div class="box-client" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
+                            <!-- <h6 id="client-title">{{ client.ClientName }}</h6> -->
+                            <img src="..\..\static\assets\{{client.ClientLogo.url}}">
+                        </div>
+                    {% endfor %}
+                    </div>
 
+            </section>
 
             <!-- <section id="blog">
     

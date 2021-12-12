@@ -324,4 +324,21 @@ section .container .owl-carousel .box-job ul li {
 }
 
 
+#clients .container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 80vh;
+}
+
+#clients .container .box-client {
+    padding: 20px;
+}
+
+#clients .container .box-client img{
+    width: 18vw;
+    height: 15vh;
+    object-fit: scale-down;
+}
+
+
 
