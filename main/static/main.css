@@ -265,7 +265,8 @@ section .container .box-left img {
 }
 
 section .container .box-right:hover,
-section .container .box-left:hover {
+section .container .box-left:hover,
+#clients .container .box-client img:hover {
     transform: scale(1.05);
 }
 
