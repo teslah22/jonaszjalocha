@@ -1,17 +1,32 @@
 $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
+    $("#resume .container .owl-carousel").owlCarousel({
 
     loop: true,
     margin: 0,
-    nav: false,
-    items: 1.6,
+    nav: true,
+    items: 1,
     autoplay: SVGComponentTransferFunctionElement,
-    autoplayTimeout: 4000,
+    autoplayTimeout: 6000,
     autoplayHoverPause: true,
     autoplaySpeed: 2000,
     center: true
 
     });
+
+    $("#projects .container .owl-carousel").owlCarousel({
+
+      loop: true,
+      margin: 0,
+      nav: true,
+      items: 1,
+      autoplay: SVGComponentTransferFunctionElement,
+      autoplayTimeout: 6000,
+      autoplayHoverPause: true,
+      autoplaySpeed: 2000,
+      center: true
+  
+      });
+
   });
 
 

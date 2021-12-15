@@ -216,12 +216,21 @@ section .container {
 
 #resume .container {
     height: 70vh;
-}
-
-section .container .owl-carousel {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+section .container .owl-carousel {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.owl-item active center {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 section .container .box-left,
@@ -242,6 +251,10 @@ section .container .owl-carousel .box-job {
     0 0 20px #c2b280;
     background-color: none;
     overflow: hidden;
+}
+
+section .container .owl-carousel .box-job {
+    margin:  0 0 0 10%;
 }
 
 section .container .box-right:hover,
@@ -270,7 +283,8 @@ section .container .box-left:hover,
     transform: scale(1.05);
 }
 
-section .container .owl-stage {
+section .container .owl-stage,
+#projects .container .owl-stage {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -284,12 +298,14 @@ section .container .owl-carousel .box-job {
 
 }
 
-section .container .owl-carousel .box-job #job-tenure{
+section .container .owl-carousel .box-job #job-tenure,
+section .container .owl-carousel .box-project #project-tenure{
     font-size: 0.5em;
     font-family: 'Rancho', cursive;
 }
 
-section .container .owl-carousel .box-job #job-title{
+section .container .owl-carousel .box-job #job-title,
+section .container .owl-carousel .box-project #project-title{
     font-size: 0.6em;
     text-align: center;
     padding: 2% 0;
@@ -315,11 +331,14 @@ section .container .owl-carousel .box-job .company-container img {
     border-radius: 20%;
 }
 
+
+
 section .container .owl-carousel .box-job ul {
     list-style-image: url(../static/assets/tower-transparent-png.png);
 }
 
-section .container .owl-carousel .box-job ul li {
+section .container .owl-carousel .box-job ul li,
+section .container .owl-carousel .box-project #project-desc ul li{
     font-size: 0.35em;
     margin-bottom: 2%;
 }
@@ -331,7 +350,8 @@ section .container .owl-carousel .box-job ul li {
     height: 80vh;
 }
 
-#clients .container .box-client {
+#clients .container .box-client,
+#projects .container .box-project {
     padding: 20px;
 }
 
@@ -341,5 +361,25 @@ section .container .owl-carousel .box-job ul li {
     object-fit: scale-down;
 }
 
+#projects .container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 60vh;
+}
 
+#projects .container .owl-carousel .box-project .project-image-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+#projects .container .owl-carousel .box-project .project-image-box img {
+    width: 20%;
+    height: 20%;
+    object-fit: scale-down;
+}
 
