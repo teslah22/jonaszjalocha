@@ -1,0 +1,1 @@
+web: gunicorn jonaszjalocha.wsgi --log-file -
