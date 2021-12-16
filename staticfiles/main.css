@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    transition: 0.5;
+    scroll-behavior: smooth;
+
+}
+
+body{
+    /* overflow: hidden; */
+    background: #fff;
+    min-height: 100vh;
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background: #c2b2803b;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    background: #c2b2803b;
+}
+
+#footer p{
+    color :#c2b280;
+    text-shadow: 0 0 10px black;
+    font-size: 1em;;
+}
+
+#header a.logo{
+    padding: 6px 15px;
+    color :#c2b280;
+    font-weight: 700;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+#header a.logo:hover
+{
+    color: #fff; 
+    text-shadow: 0 0 10px #c2b280,
+    0 0 20px #c2b280,
+    0 0 40px #c2b280,
+    0 0 80px #c2b280,
+    0 0 160px #c2b280;
+}
+
+#header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .container .box-right ul {
+    margin-left: 3%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+#header ul li{
+    margin-left: 20px;
+    z-index: 10;
+}
+
+section .container .box-right ul li {
+    font-size: 0.5em;
+    margin-bottom: 7%;
+}
+
+
+#header ul li a,
+section .container .box-right ul li a,
+section .container .owl-carousel .box-job ul li a
+{
+    padding: 6px 15px;
+    color :#c2b280;
+    border-radius: 20px;
+    font-size: 1em;
+}
+
+section .container .box-right ul li a{
+    font-size: 1em;
+}
+
+
+
+#header ul li a:hover,
+section .container .box-right a:hover,
+#header ul li a.active,
+section .container .owl-carousel .box-job ul li a:hover
+{
+
+    color: #fff;
+    text-shadow: 0 0 10px #c2b280,
+    0 0 20px #c2b280,
+    0 0 40px #c2b280,
+    0 0 80px #c2b280,
+    0 0 160px #c2b280,
+    0 0 320px #c2b280;
+}
+
+
+.cover {
+    position: relative;
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover #motto {
+    position: absolute;
+    color: #c2b280;
+    font-size: 10vw;
+    text-align: center;
+    line-height: 0.55em;
+    font-family: 'Rancho', cursive;
+    transform: translate(-68%,-60%);
+    z-index: 10;
+    line-height: 0.6em;
+    animation: animate 5s linear infinite;
+    outline: none;
+}
+
+@keyframes animate
+{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+        color:#c2b280;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color: #fff;
+        text-shadow: 0 0 10px #c2b280,
+        0 0 20px #c2b280,
+        0 0 40px #c2b280,
+        0 0 80px #c2b280,
+        0 0 160px #c2b280;
+    }
+}
+
+.cover #motto span{
+    font-size: 0.20em;
+    color: #c2b280;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+section {
+    background: black;
+    position: relative;
+    padding: 4% 10%;
+    height: 100vh;
+    font-size: 3.5em;
+    color: #f7f2e5;
+}
+
+
+.cover img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:  cover;
+    pointer-events: none;
+}
+
+section h5,
+.cover h5 {
+        color: #fff;
+        text-shadow: 0 0 10px #c2b280;
+        padding: 0 0 15px 0;
+        font-size: 0.7em;
+        z-index: 10;
+        }
+
+
+section p {
+    font-size: 0.5em;
+    margin-bottom: 3%;
+    z-index: 10;
+}
+
+
+section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    z-index: 10;
+}
+
+#resume .container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .container .owl-carousel {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.owl-item active center {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+section .container .box-left,
+section .container .box-right,
+section .container .owl-carousel .box-job {
+
+    width: 50%;
+    height: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+    border-radius: 20px;
+    border: 1px solid #c2b280;
+    box-shadow: 0 0 10px #c2b280,
+    0 0 20px #c2b280;
+    background-color: none;
+    overflow: hidden;
+}
+
+section .container .owl-carousel .box-job {
+    margin:  0 0 0 10%;
+}
+
+section .container .box-right:hover,
+section .container .box-left:hover,
+section .container .box-job:hover{
+    box-shadow: 0 0 10px #c2b280,
+    0 0 20px #c2b280,
+    0 0 40px #c2b280;
+
+}
+
+section .container .box-left img {
+    position: absolute;
+    top: 50;
+    left: 50;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    border-radius: 20px;
+}
+
+section .container .box-right:hover,
+section .container .box-left:hover,
+#clients .container .box-client img:hover {
+    transform: scale(1.05);
+}
+
+section .container .owl-stage,
+#projects .container .owl-stage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+
+section .container .owl-carousel .box-job {
+    width: 80%;
+    height: 70%;
+    padding: 2%;
+
+}
+
+section .container .owl-carousel .box-job #job-tenure,
+section .container .owl-carousel .box-project #project-tenure{
+    font-size: 0.5em;
+    font-family: 'Rancho', cursive;
+}
+
+section .container .owl-carousel .box-job #job-title,
+section .container .owl-carousel .box-project #project-title{
+    font-size: 0.6em;
+    text-align: center;
+    padding: 2% 0;
+}
+
+section .container .owl-carousel .box-job .company-container{
+    display: flex;
+    column-gap: 10%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+section .container .owl-carousel .box-job .company-container #job-company{
+    font-size: 0.4em;
+    white-space: nowrap;
+
+}
+
+section .container .owl-carousel .box-job .company-container img {
+    width: 1.5em;
+    height: 1em;
+    object-fit: scale-down;
+    border-radius: 20%;
+}
+
+
+
+section .container .owl-carousel .box-job ul {
+    list-style-image: url(../static/assets/tower-transparent-png.png);
+}
+
+section .container .owl-carousel .box-job ul li,
+section .container .owl-carousel .box-project #project-desc ul li{
+    font-size: 0.35em;
+    margin-bottom: 2%;
+}
+
+
+#clients .container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 80vh;
+}
+
+#clients .container .box-client,
+#projects .container .box-project {
+    padding: 20px;
+}
+
+#clients .container .box-client img{
+    width: 18vw;
+    height: 15vh;
+    object-fit: scale-down;
+}
+
+#projects .container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 60vh;
+}
+
+#projects .container .owl-carousel .box-project .project-image-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+#projects .container .owl-carousel .box-project .project-image-box img {
+    width: 20%;
+    height: 20%;
+    object-fit: scale-down;
+}
+
+.cover #contact-me {
+    position: absolute;
+    color: #c2b280;
+    font-size: 5vw;
+    line-height: 0.55em;
+    font-family: 'Rancho', cursive;
+    transform: translate(120%, -500%);
+    z-index: 10;
+    line-height: 0.6em;
+    animation: animate 5s linear infinite;
+    outline: none;
+}
+
+.cover .contact-info{
+    position: absolute;
+    z-index: 10;
+    color: #fff;
+    text-shadow: 0 0 10px #c2b280;
+    font-size: 1.2em;
+    transform: translate(100%, 0%);
+    line-height: 1.3em;
+}
+.cover .contact-info ul li {
+    margin-bottom: 5%;
+}
+
+.cover .contact-info ul li span{
+    color: #c2b280;
+    text-shadow: 0 0 10px #c2b280;
+    font-size: 1.6em;
+    margin-top: 5%;
+
+
+}
